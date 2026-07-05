@@ -1,0 +1,45 @@
+.headerMain{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: end;
+    gap: 0px;
+    width: 100%;
+    border-bottom: var(--var-StandartBorder);
+    padding: 10px 10%;
+    position: fixed;
+}
+
+.headerMain ul{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+.headerMain ul li{
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+.headerMain ul li button{
+    background: none;
+    border: none;
+    padding: 10px 20px;
+    color: white;
+    font-family: var(--var-fontMain);
+    font-size: 13px;
+    font-weight: 500;
+    cursor: pointer;
+}
+
+.slideHeader{
+    display: flex;
+    height: 3px;
+    background-color: var(--var-destakColor);
+    position: absolute;
+    bottom: 0px;
+    transition: 0.2s;
+}

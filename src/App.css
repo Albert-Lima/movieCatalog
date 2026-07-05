@@ -1,0 +1,23 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+:root{
+  --var-BackgroundColor: #101010;
+  --var-destakColor: #FF0033;
+
+  --var-fontMain: "Poppins", sans-serif;
+  --var-secondaryFont: "Roboto", sans-serif;
+
+  --var-StandartBorder: 1px solid #3A3A3A;
+  --var-standartBorderRadius: 10px;
+}
+
+.containerMain{
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  justify-content: start;
+  background-color: var(--var-BackgroundColor);
+  min-height: 100dvh;
+  width: 100%;
+  height: max-content;
+}
