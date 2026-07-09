@@ -7,8 +7,7 @@ import "./Top-slide.css"
 
 import movies from "../assets/data/movies"
 
-function TopSlide(){
-    const [highlights, setHiglights] = useState(movies.filter( movie => movie.highlights))
+function TopSlide({listTop, setListTop}){
 
     function loadClassName(index){
         if(index === 2){
@@ -29,7 +28,7 @@ function TopSlide(){
         <section className="top-slide">
             <section className="content-Slides-Top">
                 {
-                    highlights.map((movie, index)=>(
+                    listTop.map((movie, index)=>(
                         <div 
                             key={movie.id}
 
@@ -37,7 +36,7 @@ function TopSlide(){
                                 { backgroundImage: `url(${movie.background})`}
                             }
 
-                            className={ highlights.length <= 3 ? loadClassName(index) : "movie-top-page" }
+                            className={ listTop.length <= 3 ? loadClassName(index) : "movie-top-page" }
                             >
                             <span className="effectBackground-opacity"></span>
                             
@@ -65,7 +64,10 @@ function TopSlide(){
                 }
             </section>
 
-            <ButtonsSlide/>
+            <ButtonsSlide
+                listTop = {listTop}
+                setListTop = {setListTop}
+            />
         </section>
     )
 }
