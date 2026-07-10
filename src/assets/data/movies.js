@@ -40,6 +40,20 @@ const movies = [
         trailerLink: "https://www.youtube.com/results?search_query=The+Lord+of+the+Rings+The+Fellowship+of+the+Ring+Official+Trailer",
         newReleases: false, //lançamentos
         sinopse: "Frodo recebe a missão de destruir o Um Anel e inicia uma jornada ao lado de uma improvável sociedade de heróis."
+    },
+    {
+        id: 4,
+        title: "Superman",
+        year: 2025,
+        genre: ["Ação", "sci-fi"],
+        imdb: 7.4,
+        poster: "/images/movies/poster/superman-6831cf020afdd.jpg",
+        background: "/images/movies/background/superman-686f6aa06ccfd.jpg",
+        duration: "2h09min",
+        highlights: true, //destaques
+        trailerLink: "https://www.youtube.com/results?search_query=The+Lord+of+the+Rings+The+Fellowship+of+the+Ring+Official+Trailer",
+        newReleases: true, //lançamentos
+        sinopse: "Clark Kent tenta conciliar sua vida como jornalista e Superman enquanto enfrenta Lex Luthor e outras ameaças."
     }
 ]
 

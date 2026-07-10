@@ -22,31 +22,40 @@
 }
 
 .movie-top-page{
-    display: none;
     flex-direction: column;
     align-items: start;
     justify-content: center;
     background-repeat: no-repeat;
     background-position: center center;
     background-size: cover;
-    transition: 2s;
     overflow: hidden;
     border-radius: 10px;
+    height: 90%;
+    width: 80%;
+
+    position: absolute;
+
+    transition: 
+        transform .8s ease,
+        opacity .9s ease;
 }
 
 .leftMovieTopSlide{
-    display: flex;
-    position: absolute;
+    transform: translateX(-50vw);
     width: 200px;
     height: 60%;
-    left: -100px;
-    opacity: 0.5;
+    opacity: .5;
+    z-index: 1;
 }
+
 .centralMovieTopSlide{
     display: flex;
-    position: absolute;
-    width: calc(100% - 400px);
-    height: 90%;
+
+    transform: translateX(0) scale(1);
+    width: calc(100% - 300px);
+    opacity: 1;
+    z-index: 2;
+
     box-shadow: inset 500px 0px 150px 100px rgba(0, 0, 0, 0.377);
 }
 .effectBackground-opacity{
@@ -128,10 +137,15 @@
 }
 
 .rightMovieTopSlide{
-    display: flex;
-    position: absolute;
-    right: -100px;
+    transform: translateX(50vw);
     width: 200px;
     height: 60%;
-    opacity: 0.5;
+    opacity: .5;
+    z-index: 1;
+}
+
+.hiddenMovieTopSlide{
+    opacity: 0;
+    pointer-events: none;
+    transition: 0.1s;
 }

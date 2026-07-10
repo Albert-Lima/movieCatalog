@@ -1,25 +1,33 @@
-function ButtonsSlide({listTop, setListTop}){
+import { useState, useEffect } from "react"
 
-    function passToRight(){
-        //crio uma cópia para não alterar diretamente o elemento listPop
-        const lista = [...listTop]
+function ButtonsSlide({listTop, atualIndexSlideTop, setAtualIndexSlideTop}){
 
-        //pego o último elemento dessa cópia cópia
-        const lastItem = lista.pop()
+    function advanceTopSlide() {
+        const total = listTop.length;
 
-        //adicionar o último elemento no início do array
-        lista.unshift(lastItem)
+        setAtualIndexSlideTop((atual) => (atual + 1) % total);
+    }
 
-        //atualiza a lista
-        setListTop(lista)
+    function backTopSlide() {
+        const total = listTop.length;
+
+        setAtualIndexSlideTop((atual) => (atual - 1 + total) % total);
     }
 
     return(
         <div className="slideControl">
-            <button>voltar</button>
             <button
                 onClick={()=>{
-                    passToRight()
+                    backTopSlide()
+                }}
+            >
+                voltar
+            </button>
+
+
+            <button
+                onClick={()=>{
+                    advanceTopSlide()
                 }}
             >
                 avançar

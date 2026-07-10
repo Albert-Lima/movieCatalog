@@ -9,19 +9,30 @@ import movies from "../assets/data/movies"
 
 function TopSlide({listTop, setListTop}){
 
-    function loadClassName(index){
-        if(index === 2){
-            const className = "leftMovieTopSlide movie-top-page"
-            return className
+    const [atualIndexSlideTop, setAtualIndexSlideTop] = useState(1)
+
+    function loadClassName(index, indexAtual){
+        const total = listTop.length
+
+        const left = (atualIndexSlideTop - 1 + total) % total
+
+        const rigth = (atualIndexSlideTop + 1) % total
+        
+        if(index === left){
+            return "leftMovieTopSlide movie-top-page"
         }
-        if(index === 0){
-            const className = "centralMovieTopSlide movie-top-page"
-            return className
+
+        if(index === rigth){
+            return "rightMovieTopSlide movie-top-page"
         }
-        if(index === 1){
-            const className = "rightMovieTopSlide movie-top-page"
-            return className
+
+        if(index === atualIndexSlideTop){
+            return "centralMovieTopSlide movie-top-page"
         }
+
+        const className = "hiddenMovieTopSlide movie-top-page" 
+
+        return className
     }
 
     return(
@@ -36,8 +47,9 @@ function TopSlide({listTop, setListTop}){
                                 { backgroundImage: `url(${movie.background})`}
                             }
 
-                            className={ listTop.length <= 3 ? loadClassName(index) : "movie-top-page" }
+                            className={ loadClassName(index)}
                             >
+
                             <span className="effectBackground-opacity"></span>
                             
                             <div className="descMovieTopSlide">
@@ -65,8 +77,10 @@ function TopSlide({listTop, setListTop}){
             </section>
 
             <ButtonsSlide
-                listTop = {listTop}
-                setListTop = {setListTop}
+                listTop={listTop}
+                setListTop={setListTop}
+                atualIndexSlideTop={atualIndexSlideTop}
+                setAtualIndexSlideTop={setAtualIndexSlideTop}
             />
         </section>
     )
