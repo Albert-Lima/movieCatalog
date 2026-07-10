@@ -1,0 +1,22 @@
+.navigation-dots{
+    position: absolute;
+    bottom: 20px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+}
+
+.dotTop{
+    border: 2px solid white;
+    height: 10px;
+    width: 10px;
+    border-radius: 10px;
+    transition: 0.2s;
+}
+
+.selectedDotTop{
+    background-color: white;
+    width: 20px;
+}

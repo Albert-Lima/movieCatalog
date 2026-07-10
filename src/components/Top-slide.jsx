@@ -2,6 +2,7 @@ import { useState, useEffect } from "react"
 
 import ButtonsSlide from "./ButtonsSlide"
 import Stars from "./Stars"
+import NavigationDots from "./Navigation-dots"
 
 import "./Top-slide.css"
 
@@ -81,6 +82,11 @@ function TopSlide({listTop, setListTop}){
                 setListTop={setListTop}
                 atualIndexSlideTop={atualIndexSlideTop}
                 setAtualIndexSlideTop={setAtualIndexSlideTop}
+            />
+
+            <NavigationDots 
+                listTop={listTop}
+                atualIndexSlideTop={atualIndexSlideTop}
             />
         </section>
     )

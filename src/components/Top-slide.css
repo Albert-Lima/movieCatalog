@@ -36,8 +36,7 @@
     position: absolute;
 
     transition: 
-        transform .8s ease,
-        opacity .9s ease;
+        transform .8s ease
 }
 
 .leftMovieTopSlide{
@@ -54,7 +53,7 @@
     transform: translateX(0) scale(1);
     width: calc(100% - 300px);
     opacity: 1;
-    z-index: 2;
+    z-index: 3;
 
     box-shadow: inset 500px 0px 150px 100px rgba(0, 0, 0, 0.377);
 }
@@ -141,11 +140,11 @@
     width: 200px;
     height: 60%;
     opacity: .5;
-    z-index: 1;
+    z-index: 2;
 }
 
 .hiddenMovieTopSlide{
     opacity: 0;
     pointer-events: none;
-    transition: 0.1s;
+    transition: 0s;
 }

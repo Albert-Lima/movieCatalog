@@ -1,5 +1,7 @@
 import { useState, useEffect } from "react"
 
+import "./ButtonsSlide.css"
+
 function ButtonsSlide({listTop, atualIndexSlideTop, setAtualIndexSlideTop}){
 
     function advanceTopSlide() {
@@ -21,7 +23,7 @@ function ButtonsSlide({listTop, atualIndexSlideTop, setAtualIndexSlideTop}){
                     backTopSlide()
                 }}
             >
-                voltar
+                <img src="/images/icons8-back-50.png" alt="voltar" />
             </button>
 
 
@@ -30,7 +32,7 @@ function ButtonsSlide({listTop, atualIndexSlideTop, setAtualIndexSlideTop}){
                     advanceTopSlide()
                 }}
             >
-                avançar
+                <img src="/images/icons8-avançar-50.png" alt="avançar" />
             </button>
         </div>
     )
