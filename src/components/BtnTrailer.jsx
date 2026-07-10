@@ -1,6 +1,9 @@
+import "./BtnTrailer.css"
+
 function BtnTrailer({linkTrailer, setLinkTrailerTop, trailerStatus, setTrailerStatus}){
     return(
         <button
+            className="btnTrailer"
             onClick={
                 ()=>{
                     setLinkTrailerTop(linkTrailer)
@@ -8,7 +11,8 @@ function BtnTrailer({linkTrailer, setLinkTrailerTop, trailerStatus, setTrailerSt
                 }
             }
         >
-            ver
+            <img src="/images/icons8-reproduzir-60.png" alt="assistir trailer" />
+            Assistir
         </button>
     )
 }

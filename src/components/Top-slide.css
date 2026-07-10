@@ -126,6 +126,19 @@
     border-left: 1px solid gray;
 }
 
+.genreMovieTop{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+    font-family: var(--var-fontMain);
+    font-size: 12px;
+    font-weight: 600;
+    color: rgb(194, 194, 194);
+    margin-top: 10px;
+}
+
 .sinopseTopSlide{
     width: 100%;
     margin-top: 10px;
@@ -133,6 +146,7 @@
     font-size: 12px;
     font-weight: 500;
     color: white;
+    margin-bottom: 10px;
 }
 
 .rightMovieTopSlide{

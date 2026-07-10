@@ -1,6 +1,6 @@
 import "./Trailer.css"
 
-function Trailer({trailerStatus, linkTrailerTop}){
+function Trailer({trailerStatus, linkTrailerTop, setTrailerStatus}){
     return(
         <section className={trailerStatus ? "activeTrailer" : "inactiveTrailer"}>
             <iframe 
@@ -19,6 +19,13 @@ function Trailer({trailerStatus, linkTrailerTop}){
                 referrerpolicy="strict-origin-when-cross-origin" 
                 allowfullscreen>
             </iframe>
+            <button className="buttonCloseTrailer" onClick={
+                ()=>{
+                    setTrailerStatus(false)
+                }
+            }>
+                fechar
+            </button>
         </section>
     )
 }

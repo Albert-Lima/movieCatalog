@@ -26,6 +26,7 @@ function App(){
       <Trailer 
         trailerStatus={trailerStatus}
         linkTrailerTop={linkTrailerTop}
+        setTrailerStatus={setTrailerStatus}
       />
       <HeaderPage />
       <TopSlide 

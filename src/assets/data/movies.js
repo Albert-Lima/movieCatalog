@@ -9,7 +9,7 @@ const movies = [
         background: "/images/movies/background/interstellar-687dce5a7fcfc.jpg",
         duration: "2h16min",
         highlights: true,
-        trailerLink: "https://www.youtube.com/watch?v=2LqzF5WauAw",
+        trailerLink: "https://www.youtube.com/embed/i6avfCqKcQo?si=-6GMNGHD6bW3Fect",
         newReleases: false,
         sinopse: "Uma equipe de astronautas atravessa um buraco de minhoca para encontrar um novo planeta capaz de salvar a humanidade."
     },
@@ -23,7 +23,7 @@ const movies = [
         background: "/images/movies/background/a-clockwork-orange-537cf93a87d8b.jpg",
         duration: "2h49min",
         highlights: true,
-        trailerLink: "https://www.youtube.com/watch?v=T54uZPI4Z8A",
+        trailerLink: "https://www.youtube.com/embed/eRerbaI9axY?si=yR_RWU3xt6nLDvqK",
         newReleases: false,
         sinopse: "Um jovem violento é submetido a um experimento psicológico que promete eliminar seus instintos criminosos."
     },
@@ -37,7 +37,7 @@ const movies = [
         background: "/images/movies/background/the-lord-of-the-rings-the-fellowship-of-the-ring-58647a6dc80e8.jpg",
         duration: "2h58min",
         highlights: true, //destaques
-        trailerLink: "https://www.youtube.com/watch?v=V75dMMIW2B4",
+        trailerLink: "https://www.youtube.com/embed/0i86oM1nHjM?si=xOvHXDq3kBic6BCH",
         newReleases: false, //lançamentos
         sinopse: "Frodo recebe a missão de destruir o Um Anel e inicia uma jornada ao lado de uma improvável sociedade de heróis."
     },
