@@ -3,12 +3,13 @@ import { useState, useEffect } from "react"
 import ButtonsSlide from "./ButtonsSlide"
 import Stars from "./Stars"
 import NavigationDots from "./Navigation-dots"
+import BtnTrailer from "./BtnTrailer"
 
 import "./Top-slide.css"
 
 import movies from "../assets/data/movies"
 
-function TopSlide({listTop, setListTop}){
+function TopSlide({listTop, setListTop, trailerStatus, setTrailerStatus, setLinkTrailerTop}){
 
     const [atualIndexSlideTop, setAtualIndexSlideTop] = useState(1)
 
@@ -71,6 +72,12 @@ function TopSlide({listTop, setListTop}){
                                 <p className="sinopseTopSlide">
                                     {movie.sinopse}
                                 </p>
+                                <BtnTrailer 
+                                    linkTrailer={movie.trailerLink}
+                                    setLinkTrailerTop={setLinkTrailerTop}
+                                    trailerStatus = {trailerStatus}
+                                    setTrailerStatus = {setTrailerStatus}
+                                />
                             </div>
                         </div>
                     ))
