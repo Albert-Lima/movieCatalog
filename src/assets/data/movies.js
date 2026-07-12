@@ -61,8 +61,8 @@ const movies = [
         year: 1999,
         genre: ["Ação", "sci-fi"],
         imdb: 8.7,
-        poster: "/images/series/poster/the-matrix-58aceda793003.jpg",
-        background: "/images/series/background/the-matrix-553be0c3bdeeb.jpg",
+        poster: "/images/movies/poster/the-matrix-58aceda793003.jpg",
+        background: "/images/movies/background/the-matrix-553be0c3bdeeb.jpg",
         duration: "2h16min",
         highlights: false, //destaques
         trailerLink: "https://www.youtube.com/embed/vKQi3bBA1y8?si=EfuqEMXL8p66ytXJ",
@@ -111,6 +111,34 @@ const movies = [
         newReleases: true, //lançamentos
         sinopse: "Um ex-piloto de Fórmula 1 retorna às pistas para orientar um jovem talento e tentar reviver sua carreira."
     },
+    {
+        id: 9,
+        title: "Die Hard",
+        year: 1988,
+        genre: ["Ação", "Suspense"],
+        imdb: 8.2,
+        poster: "/images/movies/poster/die-hard-5223c50cc33eb.jpg",
+        background: "/images/movies/background/die-hard-5afbb7400ac9d.jpg",
+        duration: "2h12min",
+        highlights: false, //destaques
+        trailerLink: "https://www.youtube.com/embed/jaJuwKCmJbY?si=8-rIrWfwCJVwkXRC",
+        newReleases: false, //lançamentos
+        sinopse: "Um policial de Nova York enfrenta sozinho um grupo de terroristas durante uma festa de Natal em um arranha-céu."
+    },
+    {
+        id: 10,
+        title: "A Minecraft Movie",
+        year: 2025,
+        genre: ["Aventura", "Comédia"],
+        imdb: 5.8,
+        poster: "/images/movies/poster/a-minecraft-movie-67474e36aaa66.jpg",
+        background: "/images/movies/background/a-minecraft-movie-68334f93806f5.jpg",
+        duration: "1h41min",
+        highlights: false, //destaques
+        trailerLink: "https://www.youtube.com/embed/wJO_vIDZn-I?si=ii6-n7UUaPSBSyAZ",
+        newReleases: true, //lançamentos
+        sinopse: "Um grupo de pessoas é transportado para o universo de Minecraft e precisa aprender as regras desse mundo para sobreviver."
+    }
 ]
 
 export default movies
