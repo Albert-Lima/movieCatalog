@@ -70,8 +70,8 @@ function TopSlide({listTop, setListTop, trailerStatus, setTrailerStatus, setLink
                                     </div>
                                 </span>
                                 <span className="genreMovieTop">
-                                    {movie.genre.map((genre)=>(
-                                        <p>{genre}</p>
+                                    {movie.genre.map((genre, index)=>(
+                                        <p key={index}>{genre}</p>
                                     ))}
                                 </span>
                                 <p className="sinopseTopSlide">

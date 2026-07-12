@@ -19,7 +19,7 @@ function App(){
   //pega o trailer do filme em destaque selecionado
   const [linkTrailerTop, setLinkTrailerTop] = useState(listTop[1].trailerLink)
 
-  const newReleases = []
+  const newReleases = [...movies.filter(movie=> movie.newReleases), ...series.filter(serie => serie.newReleases)]
 
   return(
     <div className="containerMain">
@@ -38,7 +38,7 @@ function App(){
       />
 
       <SlideStandart 
-
+        newReleases = {newReleases}
       />
       
     </div>

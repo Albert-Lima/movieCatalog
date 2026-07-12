@@ -8,7 +8,7 @@ function Trailer({trailerStatus, linkTrailerTop, setTrailerStatus}){
                 height="315" 
                 src={linkTrailerTop} 
                 title="YouTube video player" 
-                frameborder="0" 
+                frameBorder="0" 
                 allow="accelerometer;
                 autoplay; 
                 clipboard-write; 
@@ -16,8 +16,8 @@ function Trailer({trailerStatus, linkTrailerTop, setTrailerStatus}){
                 gyroscope; 
                 picture-in-picture; 
                 web-share" 
-                referrerpolicy="strict-origin-when-cross-origin" 
-                allowfullscreen>
+                referrerPolicy="strict-origin-when-cross-origin" 
+                allowFullScreen>
             </iframe>
             <button className="buttonCloseTrailer" onClick={
                 ()=>{

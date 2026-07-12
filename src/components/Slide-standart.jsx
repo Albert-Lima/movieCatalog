@@ -1,11 +1,19 @@
 import { useState } from "react"
 
-import movies from "../assets/data/movies"
-
-function SlideStandart(){
+function SlideStandart({newReleases}){
     return(
-        <section>
-            
+        <section className="slide-standart">
+            {
+                newReleases.map((release, index)=>(
+                    <section 
+                        style={{color: "white"}}
+                        className=""
+                        key={index}
+                    >
+                        {release.title}
+                    </section>
+                ))
+            }
         </section>
     )
 }
