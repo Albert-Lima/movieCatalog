@@ -1,16 +1,18 @@
 import { useState } from "react"
 
-function SlideStandart({newReleases}){
+import "./Slide-standart.css"
+
+function SlideStandart({listStandart}){
     return(
         <section className="slide-standart">
             {
-                newReleases.map((release, index)=>(
+                listStandart.map((item, index)=>(
                     <section 
                         style={{color: "white"}}
                         className=""
                         key={index}
                     >
-                        {release.title}
+                        {item.title}
                     </section>
                 ))
             }

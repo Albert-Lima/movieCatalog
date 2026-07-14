@@ -37,9 +37,12 @@ function App(){
         setLinkTrailerTop = {setLinkTrailerTop}
       />
 
-      <SlideStandart 
-        newReleases = {newReleases}
-      />
+      <section className="section-standart">
+        <h2 className="titleSection">Lançamentos</h2>
+        <SlideStandart 
+          listStandart = {newReleases}
+        />
+      </section>
       
     </div>
   )
