@@ -8,6 +8,8 @@
     border-bottom: var(--var-StandartBorder);
     padding: 10px 10%;
     position: fixed;
+    z-index: 1000;
+    background-color: var(--var-BackgroundColor);
 }
 
 .headerMain ul{
